@@ -24,19 +24,26 @@ int main()
     printf("%s %s Enter following data.\n", Name, LastName);
 
     //--Ініц. змінних
-    age = 12;
-    grade1 = 5;
-    grade2 = 4;
-    grade3 = 3;
+    printf("Enter semestr:");
+    scanf("%u", &semestr);
+    printf("Enter your admission score: ");
+    scanf("%f", &admissionScore);
+    printf("Enter grade #1: ");
+    scanf("%d", &grade1);
+    printf("Enter grade #2:");
+    scanf("%d", &grade2);
+    printf("Enter grade #3:");
+    scanf("%d", &grade3);
+    printf("Enter your age: ");
+    scanf("%u", &age);
 
     averageGrade = (double)(grade1 + grade2 + grade3) / 3;
 
+    system("clear");
 
-    printf("Enter semestr:");
-    scanf("%u", &semestr);
+    printf("%s", University);
+    printf("\n%s", Faculty);
 
-    printf("\nsemestr: %u", semestr);
-    printf("\naverage grade = %.3lf\n", averageGrade);
-    printf("Hello world!\n");
+
     return 0;
 }
